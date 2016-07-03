@@ -175,16 +175,7 @@ QScrollBar::right-arrow:horizontal {
     <property name="spacing">
      <number>0</number>
     </property>
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
+    <property name="margin">
      <number>0</number>
     </property>
     <item>
@@ -221,16 +212,7 @@ QScrollBar::right-arrow:horizontal {
          <property name="spacing">
           <number>0</number>
          </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
+         <property name="margin">
           <number>0</number>
          </property>
          <item>
@@ -263,7 +245,7 @@ QScrollBar::right-arrow:horizontal {
            <property name="placeholderText">
             <string>&gt;</string>
            </property>
-           <property name="clearButtonEnabled">
+           <property name="clearButtonEnabled" stdset="0">
             <bool>true</bool>
            </property>
           </widget>
@@ -305,7 +287,7 @@ QScrollBar::right-arrow:horizontal {
           <property name="placeholderText">
            <string>Search Playlist</string>
           </property>
-          <property name="clearButtonEnabled">
+          <property name="clearButtonEnabled" stdset="0">
            <bool>true</bool>
           </property>
          </widget>
@@ -316,16 +298,7 @@ QScrollBar::right-arrow:horizontal {
            <property name="spacing">
             <number>2</number>
            </property>
-           <property name="leftMargin">
-            <number>0</number>
-           </property>
-           <property name="topMargin">
-            <number>0</number>
-           </property>
-           <property name="rightMargin">
-            <number>0</number>
-           </property>
-           <property name="bottomMargin">
+           <property name="margin">
             <number>0</number>
            </property>
            <item>
@@ -456,6 +429,9 @@ QPushButton:flat:pressed {
         </item>
         <item>
          <widget class="PlaylistWidget" name="playlistWidget">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="focusPolicy">
            <enum>Qt::ClickFocus</enum>
           </property>
@@ -564,16 +540,7 @@ QSlider::sub-page:horizontal {
           <property name="spacing">
            <number>8</number>
           </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
+          <property name="margin">
            <number>0</number>
           </property>
           <item>
@@ -1026,7 +993,7 @@ QSlider::handle:horizontal {
      <x>0</x>
      <y>0</y>
      <width>636</width>
-     <height>23</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">

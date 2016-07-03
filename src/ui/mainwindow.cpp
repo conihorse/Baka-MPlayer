@@ -248,7 +248,7 @@ MainWindow::MainWindow(QWidget *parent):
                 {
                     ui->actionSh_uffle->setEnabled(true);
                     ui->actionStop_after_Current->setEnabled(true);
-                    ShowPlaylist(true);
+                    ShowPlaylist(false); //coni
                 }
                 else
                 {
@@ -990,7 +990,7 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
         QRect playlistRect = geometry();
         playlistRect.setLeft(playlistRect.right() - qCeil(playlistRect.width()/7.0));
         bool showPlaylist = playlistRect.contains(event->globalPos());
-        ShowPlaylist(showPlaylist);
+        ShowPlaylist(false); // coni
 
         if(!(showPlayback || showPlaylist) && autohide)
             autohide->start(500);
